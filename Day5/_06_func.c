@@ -30,11 +30,12 @@ void Div(int i, int j) {
 void A(int i, int j) {
 	int result = i + j ;
 
-	if (i > 0 && j > 0)
+	if (i < 0)
 	{
-		printf("%d \n", result);
-	}else
-		printf("%d \n",  );
+		printf("%d \n", i * (-1));
+	}if (j < 0)
+		printf("%d \n", j * (-1));
+	
 }
 
 // 숫자 2개를 받아서 각각 절댓값으로 만들어 빼기
